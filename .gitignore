@@ -1,0 +1,42 @@
+# General
+.DS_Store
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+.apdisk
+*~
+
+# etc
+/temporary
+/logs
+
+# ST3
+*.sublime-workspace
+*.sublime-project
+
+# VS Code
+*.code-workspace
+
+# IDEA
+/.idea/
+/tmp/
+/bin/
+*.test
+*.swp
+
+# Nohup
+nohup.out 
+
+# Node
+node_modules/*
+
