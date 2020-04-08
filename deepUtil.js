@@ -65,7 +65,7 @@ class deepUtil{
             typeError: {}
         };
     
-        let repeatRegex = (repeat instanceof RegExp) ? repeat : /__$/;
+        let repeatRegex = (repeat instanceof RegExp) ? repeat : /\[\]$/;
     
         const typeCheck = function(type, value){
             const typeList = {

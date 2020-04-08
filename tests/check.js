@@ -53,7 +53,7 @@ const OK1 = deepUtil.check(
         formed: "number",
         secretBase: "string",
         active: "boolean",
-        members__: {
+        "members[]": {
             name: "string",
             age: "number",
             secretIdentity: "string",
@@ -88,7 +88,7 @@ const NG = deepUtil.check(
         formed: "number",
         secretBase: "string",
         active: "boolean",
-        members__: {
+        "members[]": {
             name: "string",
             age: "number",
             // secretIdentity: "string", // Not found.
