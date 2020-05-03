@@ -1,0 +1,26 @@
+{
+  "name": "deeputil",
+  "version": "1.0.0",
+  "description": "deepUtil",
+  "main": "deepUtil.js",
+  "private": true,
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test:check": "node ./tests/check.js",
+	"test:copy": "node ./tests/copy.js",
+	"test:freeze": "node ./tests/freeze.js",
+	"test:merge": "node ./tests/merge.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fioleto/deepUtil.git"
+  },
+  "author": "fioleto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fioleto/deepUtil/issues"
+  },
+  "homepage": "https://github.com/fioleto/deepUtil#readme"
+}

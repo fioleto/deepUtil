@@ -59,10 +59,12 @@ class deepUtil{
     }
 
     static check(source, types, repeat){
+        let copiedSoueceObject = deepUtil.copy(source);
         let result = {
             error: false,
             notFound: {},
-            typeError: {}
+            typeError: {},
+            shapedObject: {}
         };
     
         let repeatRegex = (repeat instanceof RegExp) ? repeat : /\[\]$/;
@@ -131,7 +133,6 @@ class deepUtil{
             let keyArray = Object.getOwnPropertyNames(types);
     
             for(let prop of keyArray){
-    
                 if(repeatRegex.test(prop)){
                     let keyName = String(prop).replace(repeatRegex, '');
     
