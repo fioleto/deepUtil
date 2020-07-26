@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const deepUtil = require("../deepUtil.js");
+const util = require("util");
 
 // https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
 let testObject = {
@@ -100,4 +101,6 @@ const mergedTestObject2 = deepUtil.merge(
     }
 );
 
-console.log(mergedTestObject2);
+console.log(
+    util.inspect(mergedTestObject2,false,null)
+);

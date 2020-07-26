@@ -12,7 +12,13 @@ class deepUtil{
                     source.hasOwnProperty(prop) &&
                     source[prop] !== null
                 ){
-                    if(typeof source[prop] === "object"){
+                    if(Array.isArray(source[prop])){
+                        if(!mergedObject.hasOwnProperty(prop))
+                            mergedObject[prop] = [];
+
+                            for(let elm of source[prop])
+                                mergedObject[prop].push(elm);
+                    }else if(typeof source[prop] === "object"){
                         if(!mergedObject.hasOwnProperty(prop))
                             mergedObject[prop] = {};
 
