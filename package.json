@@ -1,6 +1,6 @@
 {
   "name": "deeputil",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "deepUtil",
   "main": "deepUtil.js",
   "private": true,
@@ -9,9 +9,9 @@
   },
   "scripts": {
     "test:check": "node ./tests/check.js",
-	"test:copy": "node ./tests/copy.js",
-	"test:freeze": "node ./tests/freeze.js",
-	"test:merge": "node ./tests/merge.js"
+    "test:copy": "node ./tests/copy.js",
+    "test:freeze": "node ./tests/freeze.js",
+    "test:merge": "node ./tests/merge.js"
   },
   "repository": {
     "type": "git",
